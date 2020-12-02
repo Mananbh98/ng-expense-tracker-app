@@ -17,9 +17,12 @@
   cursor: pointer;
 
   .description{
+    display: flex;
     flex-grow: 1;
     font-size: 18px;
     margin-left: 5px;
+    //vertically center the childern elements
+    align-items: center;
 
 
   }
