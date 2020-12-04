@@ -13,6 +13,8 @@ import { EditItemModelComponent } from './edit-item-model/edit-item-model.compon
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {MatDialogModule} from '@angular/material/dialog';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 
@@ -30,7 +32,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   entryComponents:[EditItemModelComponent ],
